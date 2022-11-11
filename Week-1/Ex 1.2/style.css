@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background-color: #454545;
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+#album-photo {
+  width: 230px;
+  margin: 30px;
+}
+
+#play-options > p {
+  color: white;
+}
+
+section > p {
+  color: white;
+  margin-left: 6px;
+}
+
+section {
+  display: flex;
+  height: 230px;
+  justify-content: start;
+  flex-direction: column;
+}
+
+#play-options {
+  display: flex;
+  position: relative;
+  top: 120px;
+}
+
+#play-options > p {
+  display: flex;
+  align-items: center;
+  margin: 0 30px 0 0;
+}
+
+#play-options > p > i {
+  margin: 0 10px 0 0;
+}
+
+.top-icons {
+  font-size: 25px;
+  margin: 0 5px 0 0;
+}
+
+main > div {
+  display: flex;
+  margin-left: 9px;
+  height: 45px;
+  align-items: center;
+}
+
+.song-name {
+  position: relative;
+  left: 10px;
+}
+
+.artist {
+  position: absolute;
+  left: 400px;
+}
+
+.duration {
+  position: absolute;
+  left: 900px;
+}
+
+.source {
+  position: absolute;
+  left: 1100px;
+  border: solid black 1.5px;
+  color: #2018e4;
+  padding: 3px;
+}
+
+main > div:nth-of-type(even) {
+  background-color: rgb(240, 240, 240);
+}
+
+footer {
+  background-color: #44689b;
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#song-info > img {
+  width: 93px;
+  margin-left: 8px;
+}
+
+#song-info > div > p {
+  color: white;
+}
+
+#song-info {
+  height: 120px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#song-name {
+  margin: 10px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#control-buttons {
+  display: flex;
+  color: white;
+}
+
+#control-buttons > p {
+  margin: 70px;
+  font-size: 20px;
+}
+
+nav {
+  width: 50px;
+  height: 85vh;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav > p {
+  font-size: 22px;
+}
+
+#top-half {
+  display: flex;
+  width: 100%;
+}
+
+#middle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
