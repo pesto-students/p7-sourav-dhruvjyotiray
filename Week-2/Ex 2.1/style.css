@@ -10,7 +10,7 @@ body {
 }
 
 a {
-    color: rgb(225, 2, 2);
+  color: rgb(225, 2, 2);
 }
 
 header {
@@ -60,7 +60,6 @@ section > .article-1 > img {
   width: 400px;
   height: 400px;
   margin-right: 100px;
- 
 }
 
 section > .article-1 > div > h3 {
@@ -83,7 +82,6 @@ section > .article-2 > img {
   width: 400px;
   height: 400px;
   margin-right: 100px;
-  
 }
 
 section > .article-2 > div > h3 {
@@ -101,24 +99,31 @@ section > .article-3 > img {
   width: 400px;
   height: 400px;
   margin-right: 100px;
- 
 }
 
 section > .article-3 > div > h3 {
   margin-top: 0;
 }
 
-form > p > input {
-  position: absolute;
-  left: 200px;
-}
-
-form > p {
-  margin: 20px 0 20px 0;
-}
-
 form > button {
   margin-top: 20px;
+}
+
+form > div:nth-of-type(2),
+form > div:nth-of-type(3),
+form > div:nth-of-type(4),
+form > div:nth-of-type(5) {
+  display: flex;
+  width: 400px;
+  margin: 10px 0 10px 0;
+  justify-content: space-between;
+}
+
+form > div:nth-of-type(2) > input,
+form > div:nth-of-type(3) > input,
+form > div:nth-of-type(4) > input,
+form > div:nth-of-type(5) > input {
+  width: 50%;
 }
 
 footer {
@@ -126,7 +131,6 @@ footer {
   color: white;
   text-align: center;
   margin-top: 30px;
-  
 }
 
 footer > p {
@@ -143,65 +147,75 @@ footer > p:nth-of-type(3) {
 }
 
 footer > p:nth-of-type(3) > a {
-    color: white;
+  color: white;
   text-decoration: underline;
 }
 footer > p:nth-of-type(3) > a:hover {
-    color: antiquewhite;
+  color: antiquewhite;
   text-decoration: underline;
 }
 
 #form {
-    margin: 0 0 20px 20px;
-
+  margin: 0 0 20px 20px;
 }
 
-
 form {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 p > input {
-    width: 200px;
-    height: 20px;
+  width: 200px;
+  height: 20px;
 }
 
 button {
-    color: white;
-    background-color: rgb(225, 2, 2);
-    border: none;
-    font-size: 23px;
-    padding: 5px 10px 5px 10px;
-    transition: 0.3s;
+  color: white;
+  background-color: rgb(225, 2, 2);
+  border: none;
+  font-size: 23px;
+  padding: 5px 10px 5px 10px;
+  transition: 0.3s;
 }
 
 button:hover {
-    background-color: rgb(29, 29, 29);
-    cursor: pointer;
-    transform: scale(1.1);
+  background-color: rgb(29, 29, 29);
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
-@media(max-width:900px) {
-    section > .article-1 {
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 900px) {
+ 
+  form > div:nth-of-type(2),
+form > div:nth-of-type(3),
+form > div:nth-of-type(4),
+form > div:nth-of-type(5) {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 10px 0 10px 0;
+  justify-content: space-between;
+}
 
-    section > .article-1 > img {
-        margin: 0 0 15px 0;
-    }
-    section > .article-2 {
-        flex-direction: column;
-        align-items: center;
-    }
-    section > .article-2 > img {
-        margin: 0 0 15px 0;
-    }
-    section > .article-3 {
-        flex-direction: column;
-        align-items: center;
-    }
-    section > .article-3 > img {
-        margin: 0 0 15px 0;
-    }
+  section > .article-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section > .article-1 > img {
+    margin: 0 0 15px 0;
+  }
+  section > .article-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  section > .article-2 > img {
+    margin: 0 0 15px 0;
+  }
+  section > .article-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  section > .article-3 > img {
+    margin: 0 0 15px 0;
+  }
 }
