@@ -1,16 +1,14 @@
 function createStack() {
-  let child = function () {
-    return { items: [] };
+  let results = {
+    items: [],
   };
-
-  let execute = child();
-
+  
   return {
     push: function (item) {
-      return execute.items.push(item);
+      return results.items.push(item);
     },
     pop: function () {
-      return execute.items.pop();
+      return results.items.pop();
     },
   };
 }
