@@ -1,0 +1,105 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+}
+
+.todos-false {
+
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  padding: 30px;
+  background-color: lightpink;
+  font-size: large;
+  font-weight: 600;
+  border-radius: 10px;
+  margin: 10px;
+  
+}
+.todos-true {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(154, 154, 154);
+  font-size: large;
+  font-weight: 600;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.todos-true > p {
+  text-decoration: line-through;
+}
+
+.todolist {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.todolist > div:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons > button:nth-of-type(1) {
+  margin: 0 10px 0 10px;
+  background-color: rgb(25, 25, 25);
+  border: 0;
+  font-size: 15px;
+  border-radius: 30px;
+}
+.buttons > button:nth-of-type(2) {
+  margin: 0 5px 0 5px;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  font-size: 20px;
+  border-radius: 30px;
+}
+.buttons > button:hover {
+  background-color: rgb(255, 234, 0);
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+button {
+  background-color: white;
+  border: 2px solid white;
+  font-size: 25px;
+  margin: 30px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: rgb(42, 42, 42);
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+input {
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 7px 18px 7px 18px;
+  width: 33vw;
+}
+
+input:focus {
+  outline: none;
+}
