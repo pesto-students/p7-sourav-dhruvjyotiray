@@ -1,0 +1,22 @@
+.main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button {
+    font-size: 30px;
+    width: 280px;
+    height: 70px;
+    border: none;
+    margin: 10px;
+    background-color: rgb(222,222,222);
+    cursor: pointer;
+}
+
+button:nth-of-type(1) {
+    background-color: rgb(102,55,151);
+    color: white;
+}
